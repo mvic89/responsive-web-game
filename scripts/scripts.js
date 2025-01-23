@@ -76,13 +76,13 @@ const checkMatch = () => {
     const optionTwoId = cardsChosenIds[1]
     console.log(cards)
     console.log('check for a match!')
-    if (optionOneId === optionTwoId) {
+    if (optionOneId == optionTwoId) {
         cards[optionOneId].setAttribute('src', 'images/blank.png')
         cards[optionTwoId].setAttribute('src', 'images/blank.png')
         alert('You clicked the same image!')
     }
 
-    if (cardsChosen[0] === cardsChosen[1]) {
+    else if (cardsChosen[0] === cardsChosen[1]) {
         alert('you found a match!')
         cards[optionOneId].setAttribute('src', 'images/white.png')
         cards[optionTwoId].setAttribute('src', 'images/white.png')
