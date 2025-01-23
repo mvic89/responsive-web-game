@@ -59,6 +59,17 @@ const cardsWon = []
 
 console.log(gridDisplay)
 
+//startbutton
+
+startButton.addEventListener('click', startGame);
+
+function startGame() {
+    startButton.style.display = 'none';
+    gridDisplay.style.display = 'block'; //block shows the hidden grid.
+}
+
+
+
 const createBoard = () => {
     for (let i = 0; i < cardArray.length; i++) {
         const card = document.createElement('img')

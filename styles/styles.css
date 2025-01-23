@@ -9,6 +9,7 @@ body {
     height: 450px;
     display: flex;
     flex-wrap: wrap;
+    display: none;
 
 }
 
@@ -16,6 +17,20 @@ img {
     width: 150px;
     height: 150px;
 }
+
+#startButton, #restartButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#startButton, #restartButton:active  {
+    background-color: #45a049;
+}
+
 
 @media screen and (max-width: 810px) {
     #grid {
