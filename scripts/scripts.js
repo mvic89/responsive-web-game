@@ -154,3 +154,11 @@ function restartGame() {
 
 restartButton.addEventListener('click', restartGame)
 
+$(document).ready(function(){
+    let typed = new Typed('.typing', {
+        strings : ['Vic The Coder!', 'The Designer!', 'Memorymaster!'],
+        typeSpeed : 100,
+        backSpeed : 60,
+        loop : true
+    });
+})
