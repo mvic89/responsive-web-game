@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    row-gap: 30px;
     
 }
 #grid {
@@ -11,6 +12,17 @@ body {
     flex-wrap: wrap;
     display: none;
 
+}
+
+h3,  #counter {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+#counter {
+    font-weight: bold;
+    font-size: 1.15rem;
+    
 }
 
 img {
@@ -31,6 +43,10 @@ img {
     background-color: #45a049;
 }
 
+#restartButton {
+    display: none;
+}
+
 .text {
     color: black;
     font-size: 60px;
@@ -40,6 +56,10 @@ img {
 .typing {
     color: #4CAF50;
 }
+
+/* #counter {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} */
 
 
 @media screen and (max-width: 810px) {

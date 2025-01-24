@@ -70,6 +70,7 @@ startButton.addEventListener('click', startGame);
 function startGame() {
     startButton.style.display = 'none';
     gridDisplay.style.display = 'block'; //block shows the hidden grid.
+    restartButton.style.display = 'inline-block';
 }
 
 
