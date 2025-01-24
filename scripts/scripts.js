@@ -51,11 +51,12 @@ const cardArray = [
 
 cardArray.sort(() => 0.5 - Math.random()) //shuffles the array randomly.
 
+const startButton = document.getElementById('startButton')
 const gridDisplay = document.querySelector('#grid');
 const resultDisplay = document.querySelector('#result');
 let cardsChosen = []
 let cardsChosenIds = []
-const cardsWon = []
+let cardsWon = []
 
 console.log(gridDisplay)
 
@@ -126,3 +127,19 @@ function flipCard() {
         setTimeout(checkMatch, 500)
     }
 }
+
+const restartButton = document.getElementById('restartButton');
+
+function restartGame() {
+    cardsWon = [];
+    cardsChosen = [];
+    cardsChosenIds = [];
+
+    gridDisplay.innerHTML = '';
+
+    cardArray.sort(() => 0.5 - Math.random());
+
+    createBoard();
+}
+
+restartButton.addEventListener('click', restartGame)
