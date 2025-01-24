@@ -61,11 +61,28 @@ img {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 } */
 
+@media screen and (max-width: 1065px) {
+    .text {
+        font-size: 40px;
+    }
+}
 
 @media screen and (max-width: 810px) {
     #grid {
         width: 400px;
         height: 300px;
+    }
+    
+    .text {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    #counter {
+        font-size: 16px;
     }
 
     img {
