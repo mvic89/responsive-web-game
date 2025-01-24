@@ -54,9 +54,12 @@ cardArray.sort(() => 0.5 - Math.random()) //shuffles the array randomly.
 const startButton = document.getElementById('startButton')
 const gridDisplay = document.querySelector('#grid');
 const resultDisplay = document.querySelector('#result');
+let counterDisplay = document.querySelector('#counter');
 let cardsChosen = []
 let cardsChosenIds = []
 let cardsWon = []
+let completedGames = 0;
+let gameCompleted = false;
 
 console.log(gridDisplay)
 
@@ -111,6 +114,7 @@ const checkMatch = () => {
     resultDisplay.textContent = cardsWon.length;
     if (cardsWon.length === cardArray.length/2) {
         resultDisplay.textContent = 'Congratulations! You have found them all!'
+        gameCompleted = true;
         
     }
 }
@@ -131,6 +135,12 @@ function flipCard() {
 const restartButton = document.getElementById('restartButton');
 
 function restartGame() {
+    if (gameCompleted) {
+        completedGames++;
+        counterDisplay.textContent = `Games Completed: ${completedGames}`;
+        gameCompleted = false
+    }
+
     cardsWon = [];
     cardsChosen = [];
     cardsChosenIds = [];
