@@ -61,7 +61,6 @@ let cardsWon = []
 let completedGames = 0;
 let gameCompleted = false;
 
-console.log(gridDisplay)
 
 //startbutton
 
