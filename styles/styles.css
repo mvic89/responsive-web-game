@@ -31,6 +31,12 @@ img {
     background-color: #45a049;
 }
 
+.text {
+    color: black;
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 
 @media screen and (max-width: 810px) {
     #grid {

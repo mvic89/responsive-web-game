@@ -153,3 +153,4 @@ function restartGame() {
 }
 
 restartButton.addEventListener('click', restartGame)
+
